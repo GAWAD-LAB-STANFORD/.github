@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/logo.png" alt="Gawad Lab" height="88">
+<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/logo.png" alt="Gawad Lab" height="130">
 
 # Gawad Lab
 
