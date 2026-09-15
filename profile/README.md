@@ -43,20 +43,6 @@ We build single-cell and cell-free genomics pipelines — alignment, QC, variant
 
 - [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) — the lab website (plain HTML/CSS/JS, rebuilt from PubMed)
 
-## Supported by
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/bwf.png" height="38" alt="Burroughs Wellcome Fund">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/nih-new-innovator.png" height="38" alt="NIH Director's New Innovator Award">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/alsf.jpg" height="38" alt="Alex's Lemonade Stand Foundation">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/ash.png" height="38" alt="American Society of Hematology">
-<br><br>
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/cz-biohub.png" height="38" alt="Chan Zuckerberg Biohub">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/lls.png" height="38" alt="The Leukemia & Lymphoma Society">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/hyundai-hope-on-wheels.jpg" height="38" alt="Hyundai Hope on Wheels">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/GAWAD-LAB-STANFORD/.github/main/profile/assets/funders/stanford.png" height="38" alt="Stanford Medicine">
-</p>
-
 ---
 
 <div align="center">
