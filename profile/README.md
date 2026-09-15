@@ -34,11 +34,23 @@ Methods that read genomes, transcriptomes, and cell-free DNA at single-cell or s
 
 Full list: [gawadlab.org/publications](https://gawadlab.org/publications.html) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=Nbk0c_oAAAAJ)
 
-## Code & pipelines
+## Pipelines & tools
 
-- [**basejumper-sherlock**](https://github.com/GAWAD-LAB-STANFORD/basejumper-sherlock) — run BioSkryb's open-source BaseJumper single-cell QC/variant pipelines on Stanford's Sherlock cluster (SLURM + Apptainer), with a container mirror on GHCR
-- [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) — the lab website: plain HTML/CSS/JS, publications rebuilt from PubMed
-- Analysis code and source data for each study are released with the paper; the lab's HPC pipelines (WGS/WES, RNA-seq, metagenomics, bacterial genomes) are being consolidated here from the cluster
+Production pipelines the lab runs on Stanford's Sherlock cluster (SLURM), released so other groups can reuse them. Each is self-contained with its own README.
+
+| Repository | What it does |
+| :-- | :-- |
+| [**basejumper-sherlock**](https://github.com/GAWAD-LAB-STANFORD/basejumper-sherlock) | Run BioSkryb's open-source **BaseJumper** single-cell pipelines (`basej-dnaqc`, `-wgs`, `-rnaqc`, `-somatic`, `-lineage`, `-google-deepvariant`, `-rnaproteinqc`) on SLURM + Apptainer — cluster configs, one driver script, a 20-image container mirror on GHCR, and a BWA-MEM2 index builder |
+| [**Sentieon_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/Sentieon_Pipeline) | End-to-end DNA pipeline: alignment and BAM construction, QC metrics, germline and somatic variant calling, joint genotyping, Ginkgo CNV, **SCAN2** single-cell somatic calling, **PTATO**, mutational signatures (SigProfiler), and ANNOVAR annotation including **AlphaMissense** |
+| [**Simple_Slurm**](https://github.com/GAWAD-LAB-STANFORD/Simple_Slurm) | Standalone SLURM scripts for the jobs that don't need a whole pipeline — SCAN2, SigProfiler, Ginkgo CNV, mosdepth, monovar, demultiplexing, tranche filtering |
+| [**Bacteria_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/Bacteria_Pipeline) | Bacterial genome sequencing analysis — companion to our **single-microbe PTA** work, which recovers near-complete genomes from single bacterial cells without culture |
+| [**Metagenomics_Pipeline_v2**](https://github.com/GAWAD-LAB-STANFORD/Metagenomics_Pipeline_v2) | Metagenomic classification with Kraken2 + BLAST, including an RNA (STAR) mode and subspecies-level calling |
+| [**RNA_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/RNA_Pipeline) | STAR-based RNA-seq alignment, BAM construction, and quantification |
+| [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) | The lab website — plain HTML/CSS/JS, publications rebuilt from PubMed |
+
+Also archived here: [**CellSeek**](https://github.com/GAWAD-LAB-STANFORD/CellSeek), an interactive single-cell explorer that renders large datasets by binning cells into a hexagonal grid and sending only non-zero values over the wire.
+
+Analysis code and source data for individual studies are released alongside each publication.
 
 ---
 
