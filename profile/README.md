@@ -18,30 +18,27 @@ We invent single-cell and cell-free genomics methods, then use them to understan
 
 ---
 
-## What we do
+## What we build
 
-Three things a lab can do that a company or a clinic alone cannot — invent the measurement, use it to find the answer, and carry it to the bedside:
+Methods that read genomes, transcriptomes, and cell-free DNA at single-cell or single-molecule resolution, and the analysis code that makes sense of the result. Each row links to the papers that introduced or applied the tool.
 
-- **🔬 Invent** new ways to read single cells. The lab created **primary template-directed amplification (PTA)** and is extending it to paired genome, transcriptome, methylome, and surface-proteome readouts from the *same* cell.
-- **🧬 Discover** how cancer evolves and escapes. We follow individual leukemia cells through diagnosis, treatment, and relapse to learn why a small fraction survive therapy.
-- **🏥 Translate** discoveries into diagnostics. From plasma cell-free DNA sequencing to single-microbe genomics, led by a practicing pediatric oncologist.
+| Tool type | What it does | Papers |
+| :-- | :-- | :-- |
+| **Single-cell whole-genome amplification (PTA)** | Primary template-directed amplification copies a single cell's genome uniformly enough to call point mutations, indels, and copy number in one cell; available commercially as ResolveDNA | [PNAS 2021](https://doi.org/10.1073/pnas.2024176118) · [Methods Mol Biol 2019](https://doi.org/10.1007/978-1-4939-9240-9_14) · [PLoS One 2014](https://doi.org/10.1371/journal.pone.0105585) · [Nat Rev Genet 2016](https://doi.org/10.1038/nrg.2015.16) |
+| **Same-cell genome + transcriptome** | Paired DNA and full-length RNA readouts from the same cell, so a mutation can be tied to the cell state it produces; methylation and surface-protein layers are in development | [bioRxiv 2025](https://www.biorxiv.org/content/10.1101/2025.03.19.644196v2) |
+| **Single-cell variant calling & clonal reconstruction** | Computational methods that separate true somatic variants from amplification artifacts and rebuild clonal trees, applied to leukemia through diagnosis, therapy, and relapse | [PNAS 2014](https://doi.org/10.1073/pnas.1420822111) · [BMC Genomics 2017](https://doi.org/10.1186/s12864-017-4286-1) · [Nat Genet 2024](https://doi.org/10.1038/s41588-024-01920-6) · [Sci Adv 2025](https://doi.org/10.1126/sciadv.adt3873) |
+| **Cell-free DNA sequencing** | Plasma DNA assays that predict bloodstream infection before symptoms appear and track leukemia and microbes in the same sample | [JAMA Oncol 2020](https://doi.org/10.1001/jamaoncol.2019.4120) · [Sci Adv 2022](https://doi.org/10.1126/sciadv.abj1360) · [Lancet Microbe 2026](https://doi.org/10.1016/j.lanmic.2025.101312) |
+| **Single-microbe genomics** | PTA adapted to single bacterial cells: near-complete genomes without culture | [ISME Commun 2024](https://doi.org/10.1093/ismeco/ycae085) |
+| **Somatic-mosaicism detection** | Single-cell and deep-sequencing approaches that find mutations present in only a fraction of cells, from human neurons to inherited cardiac disease | [Nat Genet 2022](https://doi.org/10.1038/s41588-022-01180-2) · [PNAS 2016](https://doi.org/10.1073/pnas.1607187113) |
+| **Single-cell atlases & exploration tools** | Transcriptional atlases of developing and malignant tissue, and interactive viewers for single-cell data ([CellSeek](https://gawadlab.github.io/CellSeek/)) | [Curr Biol 2018](https://doi.org/10.1016/j.cub.2018.07.062) · [Nature 2019](https://doi.org/10.1038/s41586-019-1434-6) · [Genome Med 2023](https://doi.org/10.1186/s13073-023-01241-z) |
 
-## Research programs
+Full list: [gawadlab.org/publications](https://gawadlab.org/publications.html) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=Nbk0c_oAAAAJ)
 
-|      | Program | Focus |
-| :--: | :-- | :-- |
-| **01** | **Reading a whole cell at once** | PTA and its extensions — genome, transcriptome, methylome, and surface proteome from one cell, plus cell-free DNA methods |
-| **02** | **Outrunning relapse in childhood leukemia** | Sequencing the rare leukemia cells that survive therapy to find resistance mutations and flag relapse early (ALL, AML) |
-| **03** | **Do common childhood viruses cause leukemia?** | Whether respiratory viruses drive the APOBEC3A and RAG mutations that turn a silent *ETV6-RUNX1* fusion into leukemia |
-| **04** | **When a disease lives in only some cells** | Somatic mosaicism and precancer — finding mutations standard tests miss, from childhood epilepsy to the first steps toward cancer |
+## Code & pipelines
 
-**Emerging directions:** single-microbe genomics · circulating tumor cells · infection diagnostics from cell-free DNA.
-
-## Software & code
-
-We build single-cell and cell-free genomics pipelines — alignment, QC, variant calling, and expression — adapted to run on HPC / SLURM. Analysis code for individual studies is released here alongside each publication, and our website is an open, dependency-free static site.
-
-- [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) — the lab website (plain HTML/CSS/JS, rebuilt from PubMed)
+- [**basejumper-sherlock**](https://github.com/GAWAD-LAB-STANFORD/basejumper-sherlock) — run BioSkryb's open-source BaseJumper single-cell QC/variant pipelines on Stanford's Sherlock cluster (SLURM + Apptainer), with a container mirror on GHCR
+- [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) — the lab website: plain HTML/CSS/JS, publications rebuilt from PubMed
+- Analysis code and source data for each study are released with the paper; the lab's HPC pipelines (WGS/WES, RNA-seq, metagenomics, bacterial genomes) are being consolidated here from the cluster
 
 ---
 
