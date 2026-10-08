@@ -46,6 +46,7 @@ Production pipelines the lab runs on Stanford's Sherlock cluster (SLURM), releas
 | [**Bacteria_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/Bacteria_Pipeline) | Bacterial genome sequencing analysis — companion to our **single-microbe PTA** work, which recovers near-complete genomes from single bacterial cells without culture |
 | [**Metagenomics_Pipeline_v2**](https://github.com/GAWAD-LAB-STANFORD/Metagenomics_Pipeline_v2) | Metagenomic classification with Kraken2 + BLAST, including an RNA (STAR) mode and subspecies-level calling |
 | [**RNA_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/RNA_Pipeline) | STAR-based RNA-seq alignment, BAM construction, and quantification |
+| [**SH800_Flow_Pipeline**](https://github.com/GAWAD-LAB-STANFORD/SH800_Flow_Pipeline) | Sony **SH800** flow cytometry in R: saturated-event removal, PeacoQC, debris and size-aware doublet gating, and positive gates set from matched negative controls, with PNG figures and tables; packaged with a lab Results Report builder as Claude Code skills |
 | [**gawadlab.org**](https://github.com/GAWAD-LAB-STANFORD/gawadlab.org) | The lab website — plain HTML/CSS/JS, publications rebuilt from PubMed |
 
 Also archived here: [**CellSeek**](https://github.com/GAWAD-LAB-STANFORD/CellSeek), an interactive single-cell explorer that renders large datasets by binning cells into a hexagonal grid and sending only non-zero values over the wire.
